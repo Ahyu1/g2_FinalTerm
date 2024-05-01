@@ -7,16 +7,16 @@ kung saan nakalagay yung mga files na designated for each section.
 ganito structured ng folder na gagawin mo;
 MAIN
  -HomePage
-   > home.html
-   > css.html
-   > and such..
+ > home.html
+ > css.html
+ > and such..
  -AboutPage
-   > ..
-   > ..
+ > ..
+ > ..
  -MenuPage
-   >
+ >
  -LocationPage
-   >
+ >
  -ContactPage
  -DevelopersPage
 
