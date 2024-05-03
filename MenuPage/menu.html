@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manong Barbs Menu</title>
+    <link rel="stylesheet"  href="menu.css">
+</head>
+<body>
+    <div>
+        <!---Navbar-->
+        <div class="navbar">
+            <div class="logo--container">
+                <img src="logo.jpg" alt="logoImage" class="logo">
+            </div>
+            <div class="navItems--container">
+                <a href="../HomePage/main.html"><button id="homeBtn">HOME</button></a>
+                <a href="../MenuPage/menu.html" target="_self"><button id="menuBtn">MENU</button></a>
+                <a href="../AboutPage/about.html"><button id="aboutBtn">ABOUT</button></a>
+                <a href="../LocationPage/location.html"><button id="locationBtn">LOCATION</button></a>
+                <a href="../ContactPage/contact.html"><button id="contactsBtn">CONTACTS</button></a>
+            </div>
+            <div class="developer--info">
+                <a href="../DevelopersPage/developers.html"><button id="devBtn"><img src="devIcon.png" alt="devIcon"></button></a>
+            </div>
+        </div>
+        <!---MenuPage contents-->
+        <div class="inputContainer">
+            <input list="foodCategories" name="food" id="foodInput" placeholder="&#128269; Select your cravings: ">
+            <datalist id="foodCategories">
+                <option value="Rice Meals"></option>
+                <option value="Family Meals"></option>
+                <option value="Desserts"></option>
+            </datalist>
+        </div>
+        <div class="root">
+            <div class="firstCategory">
+                <h1>Family Meals</h1>
+                <div class="items-container">
+                    <div class="item-box">
+                        <img src="item1.png" alt="item1-img" id="img">
+                        <h3 id="name">6pcs Fried Chicken</h3>
+                        <p id="price">₱345</p>
+                        <button id="addBtn" onClick="addCart()">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item2.png" alt="item1-img" id="img">
+                        <h3 id="name">12sticks Pork BBQ</h3>
+                        <p id="price">₱340</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item3.png" alt="item1-img" style="margin-top:-10px; width:159px;">
+                        <h3 id="name" style="margin-top: 25px;">Pancit Malabon</h3>
+                        <p id="price">₱390</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="secondCategory">
+                <h1>Rice Meals</h1>
+                <div class="items-container">
+                    <div class="item-box">
+                        <img src="item4.png" alt="item1-img" id="img">
+                        <h3 style="margin-top:11px" id="name">BBQ w/rice & Pancit Malabon</h3>
+                        <p id="price">155</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item5.png" alt="item1-img" style="margin-top: -20px;">
+                        <h3 style="margin-top:14px">2pc Fried Chicken w/rice</h3>
+                        <p>₱155</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item6.png" alt="item1-img">
+                        <h3 style="margin-top:11px">Chicken w/rice & Pancit Canton</h3>
+                        <p>₱165</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="thirdCategory">
+                <h1>Desserts</h1>
+                <div class="items-container">
+                    <div class="item-box">
+                        <img src="item7.png" alt="item1-img" style="margin-top:-10px;">
+                        <h5>Halo-Halo Leche Flan Delight</h5>
+                        <p>₱130</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item8.png" alt="item1-img" style="margin-top:-20px;">
+                        <h3>Halo-Halo Classic</h2>
+                        <p>₱120</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="item-box">
+                        <img src="item9.png" alt="item1-img">
+                        <h3>Halo-Halo Ube Royale</h3>
+                        <p>₱130</p>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartSection">
+            <h3>Your cart is empty</h3>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+    
+</body>
+</html>
