@@ -128,3 +128,6 @@ function changeQuantity(key, quantity){
     reloadCard();
 }
 
+total.addEventListener('click', () =>{
+    window.alert(`Your total order is ${total.innerHTML}`);
+})
